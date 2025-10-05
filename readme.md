@@ -2,7 +2,7 @@
 
 A lightweight, zero-dependency file browser for Node.js. Serve and browse your local files securely over HTTP/2 with a clean and simple UI built with nothing but vanilla HTML and CSS.
 
-*(Replace the image above with a real screenshot of your application\!)*
+
 
 ## ✨ Features
 
