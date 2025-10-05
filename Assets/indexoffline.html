@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="content-language" content="en" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>File Browser</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/png">
+<style>
+@font-face {
+  font-family: 'Comic_Nue_Bold';
+  src: url("/ce17a53c-b77c-4f6b-8364-8e1f89209254");
+}
+    
+body{
+    background-color: #eafcfc;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+    font-family: 'Comic_Nue_Bold';
+    color: #007e80;
+
+}
+.BackContainer{
+    background-color: #cdf8f7;
+    position: absolute;
+    --gap: min(3vh,3vw);
+    width: calc(100% - (var(--gap)*2));
+    height: auto;
+    left : min(3vh,3vw);
+    box-sizing: border-box;
+    border: 2px solid #5adcde;
+    border-radius: min(4vh,4vw);
+    box-shadow: 0px 0px 6px 3px #45434380;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 43vw);
+    padding: max(1vh,1vw);
+    gap: 2vw;
+}
+
+
+.Item{
+    background-color: #aaeff0;
+    border: 2px solid #5adcde;
+    border-radius: min(3vh,3vw);
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    min-height: 10vh;
+    transition: box-shadow 0.2s ease,transform 0.2s ease, border-radius 0.5s ease, background-color 0.8s ease;
+    cursor: pointer;
+    display: flex;
+}
+.img_container{
+    width: 30%;
+    display: flex;
+    transition: transform 0.3s ease;
+    flex-direction: column;
+    margin: 1%;
+}
+img{
+    object-fit: fill;
+    width: 98%;
+    border-radius: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5));
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+}
+.Info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: opacity 0.8s ease, max-height 0.8s ease;
+}
+.Item:hover{
+    box-shadow: 2px 2px 4px 1px #45434380;
+    transform: scale(1.02);
+    border-radius: min(1vh,1vw);
+    background-color: #eafcfc;
+}
+
+.Item:hover .Info{
+    max-height: fit-content;
+    transform: scaleY(1);
+    opacity: 1;
+    margin-top: auto;
+}
+.Item:hover .img_container{
+    display: none;
+}
+
+.FileName{
+    font-size: max(2vh,2vw);
+    margin-left: 5px;
+    overflow-wrap: anywhere;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-align: center;
+    font-family: 'Comic_Nue_Bold';
+    margin-top: auto;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: auto;
+    transition: 0.2s ease;
+}
+.FileName:hover{
+    -webkit-line-clamp: 100;
+}
+
+.Fileext{
+    font-family: 'Comic_Nue_Bold';
+    font-weight: 700;
+    margin-left: 10px;
+    color: gray;
+}
+.FileSize{
+    font-family: 'Comic_Nue_Bold';
+    font-weight: 700;
+    color: gray;
+}
+.Folder{
+    font-family: 'Comic_Nue_Bold';
+    font-weight: 700;
+    box-shadow: 5px 5px 0px 2px #5adcde;
+    text-align: center;
+}
+@media (min-aspect-ratio:1/1) {
+    .BackContainer{
+        grid-template-columns: repeat(4, 23%);
+    }
+    .FileName{
+        font-size: min(2vh,2vw);
+    }
+    .Item:hover .FileName{
+        font-size: min(1.9vh,1.9vw);
+    }
+    .Item:hover img{
+        border-radius: 17%;
+    }
+    .Item:hover .img_container{
+        display: flex;
+        transform: scale(0.8);
+    }
+}
+</style>
+<body>
+    <div class="BackContainer">
+        {}
+        <!-- <a href="/a.txt">
+            <div class="Item File">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Windows_live_square.JPG"/>
+                <div style="width: 100%;display: flex;flex-direction: column;">
+                    <p1 class="FileName">FilenamehjewbhjgkUHJabsdgjbwhjegbakshgdajhdkajhgfabfhagskhfgahb.png</p1>
+                    <div style="display: flex;justify-content: space-between;margin-top: auto;margin-bottom: 10px;">
+                        <p1 class="Fileext">png</p1>
+                        <p1 class="FileSize">30MB</p1>
+                    </div>
+                </div>
+        </div>
+        </a>
+        <a href="/a.txt">
+            <div class="Item File">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Windows_live_square.JPG"/>
+                <div style="width: 100%;display: flex;flex-direction: column;">
+                    <p1 class="FileName">Filename.png</p1>
+                    <div class="Info">
+                        <p1 class="Fileext">png</p1>
+                        <p1 class="FileSize">30MB</p1>
+                    </div>
+                </div>
+        </div>
+        </a>
+        
+        <div class="Item Folder">
+        </div> -->
+    </div>
+</body>
+</html>

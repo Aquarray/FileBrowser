@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64"
+   height="64"
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="unkown.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:export-filename="../Documents/Github Projects/File Browser 2.0/FileBrowser2.0/Assets/Icons/unkown.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview220"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="3.6611051"
+     inkscape:cx="154.87127"
+     inkscape:cy="25.675308"
+     inkscape:window-width="1920"
+     inkscape:window-height="1000"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="text2431">
+    <inkscape:grid
+       type="xygrid"
+       id="grid343" />
+  </sodipodi:namedview>
+  <defs
+     id="defs215">
+    <rect
+       x="19.073908"
+       y="6.9263096"
+       width="28.883657"
+       height="36.888027"
+       id="rect1741" />
+    <rect
+       x="-8.8319712"
+       y="1.6330497"
+       width="120.48743"
+       height="60.435608"
+       id="rect451" />
+    <rect
+       x="-2.2386527"
+       y="11.071222"
+       width="86.587555"
+       height="58.66782"
+       id="rect2433" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#868686;fill-opacity:1;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round"
+       id="rect1075"
+       width="64.026817"
+       height="64.037483"
+       x="-0.0046804589"
+       y="0.047094479" />
+    <g
+       aria-label="UNK"
+       transform="translate(-8.2801759,-9.3103113)"
+       id="text2431"
+       style="font-size:48px;white-space:pre;shape-inside:url(#rect2433);fill:#6f6f6f;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round">
+      <text
+         xml:space="preserve"
+         transform="matrix(0.66175945,0,0,0.66175945,24.543049,46.254903)"
+         id="text449"
+         style="font-weight:bold;font-size:16px;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue Bold';white-space:pre;shape-inside:url(#rect451);display:inline;fill:#ffffff;fill-opacity:1;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round"><tspan
+           x="-8.8320312"
+           y="16.154552"
+           id="tspan1849">Unknown</tspan></text>
+      <text
+         xml:space="preserve"
+         transform="translate(15.087681,10.514147)"
+         id="text1739"
+         style="font-weight:bold;font-size:29.3333px;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue Bold';white-space:pre;shape-inside:url(#rect1741);display:inline;fill:#ffffff;fill-opacity:1;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round"><tspan
+           x="19.074219"
+           y="33.548939"
+           id="tspan1851">?</tspan></text>
+    </g>
+  </g>
+</svg>
